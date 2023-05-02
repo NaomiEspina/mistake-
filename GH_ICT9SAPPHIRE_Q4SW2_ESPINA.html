@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Second Converter</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</head>
+<body class="text-dark container">
+	<br>
+	<br>
+	<center >
+		<img src="https://www.freeiconspng.com/thumbs/clock-png/clock-png-5.png" style="height: 100px; width: 100px">
+	<h2 style="font-family: Forte Regular">Time Converter</h2>
+	<h5 style=" color: black; font-family: Impact Regular">Seconds to Minutes? Seconds to Hours? Seconds to Days? It's all here!</h5><br>
+	</center>
+	<center class="container text-light bg-dark">
+		<br>
+		<input type="text" id="id1">
+		<br>
+	<div>
+		<button type="button" onclick="MFunction()" class="btn btn-outline-light">Convert to Minutes</button>
+		<button type="button" onclick="HFunction()" class="btn btn-outline-light">Convert to Hours</button>
+		<button type="button" onclick="DFunction()" class="btn btn-outline-light">Convert to Days</button>
+	</div>
+		<br>
+		<script>
+			function MFunction() {
+					var var1 = document.getElementById('id1').value;
+					var Minutes = 60;
+					var answer1 = var1 / Minutes
+					window.alert(answer1)
+				}
+		</script>
+		<script>
+			function DFunction() {
+					var var2 = document.getElementById('id1').value;
+					var Days = 86400;
+					var answer2 = var2 / Days
+					window.alert(answer2)
+				}
+		</script>
+		<script>
+			function HFunction() {
+					var var3 = document.getElementById('id1').value;
+					var Hours = 3600;
+					var answer3 = var3 / Hours
+					window.alert(answer3)
+				}
+		</script>
+	</center>
+</body>
+</html>
